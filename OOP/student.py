@@ -32,10 +32,10 @@ s2 = Student("gra", 12, 60)
 s3 = Student("g", 9, 90)
 
 course = Course("Bio", 2)
-print(course.add_students(s1))
-print(course.add_students(s2))
-print(course.add_students(s3))
-print (course.students[0].name)
+course.add_students(s1)
+course.add_students(s2)
+course.add_students(s3)
+course.students[0].name
 
 print(course.get_average_grade())
 
