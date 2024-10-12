@@ -34,3 +34,12 @@ class Solution:
 list2 = [1, 4, 2, 5, 3, 9, 7]  
 sol1 = Solution()
 print(sol1.twoSum(list2, 3))
+
+
+
+aws lambda add-permission \
+--function-name "arn:aws:lambda:us-east-1:482042074781:function:stageVar-V1:prod" \
+--source-arn "arn:aws:execute-api:us-east-1:482042074781:978wppwdd1/*/GET/stage-variables" \
+--principal apigateway.amazonaws.com \
+--statement-id 8a640f98-2bf7-4a50-86bc-6ab02bdea45d \
+--action lambda:InvokeFunction
