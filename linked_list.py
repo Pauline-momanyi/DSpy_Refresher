@@ -14,7 +14,7 @@ class Node:
 # linked_list_1 = LinkedList(4)
 # print (linked_list_1.value)
 
-class LinkedList():
+class LinkedList:
     def __init__(self, value) -> None:
         # or use super : super().__init__(value) and pass the Node class - inheritance, but next is not initialized
         new_node = Node(value)
