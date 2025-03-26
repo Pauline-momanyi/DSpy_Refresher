@@ -38,7 +38,7 @@ except FileExistsError:
     
     
 # writing a list - we can only write str so we have to iterate
-employees = ["Popo", "Pauline", "Nyaboke"]
+employees = ["Popoh", "Pauline", "Nyaboke"]
 new_file = "interm/employees.txt"
 
 try: 
@@ -58,7 +58,7 @@ json_filepath = "interm/employees.json"
 n_employee = {
     "name":"Pauline",
     "age":28,
-    "role":"project manager"
+    "role":"Project Manager"
 }
 
 with open(json_filepath, "w") as file: 
