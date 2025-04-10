@@ -12,6 +12,8 @@ def set_alarm(alarm_time):
     while is_running:
         current_time = datetime.datetime.now().strftime("%H:%M:%S")
         print(current_time)
+        # for i in range(100000000): #test execution time to see if sleep still delays 1s
+        #     pass
         if current_time==alarm_time:
             print("Wake Up!!")
             
