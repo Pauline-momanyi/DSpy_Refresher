@@ -20,10 +20,10 @@ def set_alarm(alarm_time):
             pygame.mixer.init()
             pygame.mixer.music.load(sound_file)
             pygame.mixer.music.play()
-            
-            #keep playing
-            while pygame.mixer.music.get_busy():
-                time.sleep(1)
+            time.sleep(10) #manually play 10 secs
+            #keep playing until program stopped
+            # while pygame.mixer.music.get_busy():
+            #     time.sleep(5)
             is_running=False
         time.sleep(1)
     
